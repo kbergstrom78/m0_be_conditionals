@@ -61,20 +61,26 @@ puts "is number_students less than or equal to 21?", number_students <= 21
 
 puts 4 < 9
 #YOU DO: Explain.
+# This is validating if the integer 4 is less than 9 and will return a value of "true"
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# This has assigned a value of 3 to books and then is validating is 4 is less than books.  4 < 3 is not true,
+# so it will return "false"
 
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
+# This has assigned values of 6 to friends, and value of 2 to siblings.  Then we're validating if the number of 
+# friends is greater than the number of siblings.  6 is greater than 2, so it will return a message "true"
 
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
+# This has assigned a value of 9 to attendees, and a value of 8 to meals.  Then it's validating that the number of
+# attendees is not equal to the number of meals, and should return as "true"
 
 
 #-------------------
@@ -97,15 +103,25 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
+# This is true
 
 # Determine if the dog loves to play and loves the dog park
+puts loves_to_play && loves_dog_park
+# This is false 
 
 
 # Determine if the dog loves to play or loves the dog park
+puts loves_to_play || loves_dog_park
+# this is true
 
 
 # Determine if the dog loves to play and is a puppy
 
+puppy = age <= 1
+puts loves_to_play && puppy
+
+#this is true
+
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: I assigned the variable "puppy" as an age equal to or less than 1.  This makes this true.
